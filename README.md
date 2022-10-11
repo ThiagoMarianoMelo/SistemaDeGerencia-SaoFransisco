@@ -5,7 +5,9 @@ Desenvolvimento de um sistema de gestão de projetos para o hospital São franci
 ## Alunos integrantes da equipe
 
 -> Back-End + Dados: Thiago Melo (https://github.com/ThiagoMarianoMelo)
+<br></br>
 -> Front-end + Design: Felipe Espindola (https://github.com/felipeevalerio)
+<br></br>
 -> Documentação + PO: Julia Evelyn (https://github.com/ju-evelyn)
 
 ## Instruções de utilização
