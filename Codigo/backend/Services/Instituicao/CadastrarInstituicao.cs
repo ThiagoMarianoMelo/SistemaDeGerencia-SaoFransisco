@@ -9,7 +9,7 @@ public class CadastrarInstituicao : ICadastrarInstituicao
 {
     public void cadastrarInstituicao(CadastrarInstituicaoModel instituicao)
     {
-        var conn = new DataBaseConnection().TesteDataBaseConnection();
+        var conn = new DataBaseConnection().dataBaseConnection();
 
         conn.Open();
 

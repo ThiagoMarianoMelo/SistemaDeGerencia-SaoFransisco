@@ -10,15 +10,13 @@ public class AtualizarInstituicao : IAtualizarInstituicao
 {
     void IAtualizarInstituicao.AtualizarInstituicao(InstituicaoModel instituicao)
     {
-        
-
-        var conn = new DataBaseConnection().TesteDataBaseConnection();
+        var conn = new DataBaseConnection().dataBaseConnection();
 
         conn.Open();
 
-        var cmd = new NpgsqlCommand("UPDATE public.\"Instituicao\" SET \"nome\" = @Nome, \"email\" = @Email, \"telefone\" = @Telefone, \"sponsor\" = @Sponsor, \"intercedente\" = @Intercedente WHERE \"ID = @ID", conn);
+        var cmd = new NpgsqlCommand("UPDATE public.\"Instituicao\" SET \"nome\" = @Nome, \"email\" = @Email, \"telefone\" = @Telefone, \"sponsor\" = @Sponsor, \"intercedente\" = @Intercedente WHERE \"id\" = @ID", conn);
 
-        cmd.Parameters.AddWithValue("Nome", "Thiago");
+        cmd.Parameters.AddWithValue("Nome", instituicao.nome);
         cmd.Parameters.AddWithValue("Email", instituicao.email);
         cmd.Parameters.AddWithValue("Telefone", instituicao.telefone);
         cmd.Parameters.AddWithValue("Sponsor", instituicao.sponsor);

@@ -8,7 +8,7 @@ public class DeletarInstituicao : IDeletarInstituicao
 {
     public void deletarInstituicao(int ID)
     {   
-        var conn = new DataBaseConnection().TesteDataBaseConnection();
+        var conn = new DataBaseConnection().dataBaseConnection();
 
         conn.Open();
 

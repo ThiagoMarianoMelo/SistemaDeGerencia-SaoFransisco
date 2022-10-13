@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lml/LZg9hxbFTpD+9O2s4yQjI6wflEeowXknnYnU3XMAmGv3Fezu4OcKPRecUY+ayb/VAgM77K2f7Ks+rTXKwg==",
+  "dgSpecHash": "+eeock4csq8snOVLJN579bhCXSOk01sg9pC95SOJWBDyQrkXVUHf6mwBGCQhIYbk2Du3WG9bRatp9Vt3lRE8Kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Projects\\Atividades 4° Periodo\\Tis4\\Tis4.csproj",
+  "projectFilePath": "C:\\Users\\thiag\\OneDrive\\Área de Trabalho\\Projects\\Atividades 4° Periodo\\HospitalSaoFransisco\\Codigo\\backend\\Tis4.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thiag\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0-rc.1.22426.7\\microsoft.entityframeworkcore.7.0.0-rc.1.22426.7.nupkg.sha512",
     "C:\\Users\\thiag\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0-rc.1.22426.7\\microsoft.entityframeworkcore.abstractions.7.0.0-rc.1.22426.7.nupkg.sha512",

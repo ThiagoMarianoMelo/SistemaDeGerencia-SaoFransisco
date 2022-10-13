@@ -14,12 +14,10 @@ namespace Tis4.Controllers.Instituicao.InstituicaoController;
 
 public class InstituicaoController : ControllerBase
 {
-
     public IVisualizarInstiuicoes VisualizarInstiuicoes;
     public  IDeletarInstituicao DeletarInstituicao;
     public IAtualizarInstituicao AtualizarInstituicao;
     public ICadastrarInstituicao CadastrarInstituicao;
-
 
     public InstituicaoController(){
     
@@ -44,8 +42,5 @@ public class InstituicaoController : ControllerBase
 
     [HttpPut]
     [Route("/Instituicoes")]
-    public void AttInstituicao(int id,InstituicaoModel instituicao) {
-        AtualizarInstituicao.AtualizarInstituicao(instituicao);
-    } 
-
+    public void AttInstituicao([FromBody] InstituicaoModel instituicao) => AtualizarInstituicao.AtualizarInstituicao(instituicao);
 }

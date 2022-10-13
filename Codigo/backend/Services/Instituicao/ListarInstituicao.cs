@@ -12,7 +12,7 @@ public class listarInstituicao : IVisualizarInstiuicoes
     {
         List<InstituicaoModel> instituicoesCadastradas = new List<InstituicaoModel>();
         
-        var conn = new DataBaseConnection().TesteDataBaseConnection();
+        var conn = new DataBaseConnection().dataBaseConnection();
 
         conn.Open();
 
