@@ -1,0 +1,45 @@
+.institution {
+    .name {
+        color: var(--green-700);
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-color: var(--gray-700);
+            border: 0;
+            padding: 0.2rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+    
+            &:hover {
+                background-color: var(--gray-500);
+            }
+    
+            &:last-child {
+                color: var(--white);
+                background-color: rgb(233, 41, 41);
+            
+                &:hover {
+                    background-color: rgb(184, 52, 52);
+    
+                }
+            }
+        }
+    };
+}
+
