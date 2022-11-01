@@ -1,0 +1,23 @@
+.flowContainer {
+    margin: 2rem;
+
+    .name {
+        color: var(--green-700);
+        font-weight: bold;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .phases {
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+

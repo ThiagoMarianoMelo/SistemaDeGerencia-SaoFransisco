@@ -1,0 +1,87 @@
+.phaseContainer {
+    border: 1px solid var(--black);
+    padding: 1rem 0;
+    width: 252px;
+    border-radius: 4px;
+
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 3rem;
+    height: 282px;
+
+    &.toComplete {
+        gap: 0;
+        h4 {
+            margin-bottom: 5.85rem;
+        }
+        button:first-child {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    h4 {
+        width: 100%;
+        font-size: 1.125rem;
+        min-height: 44px;
+    }
+
+    .button {
+        border: 0;
+        border-radius: 4px;
+        padding: 0.875rem;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        width: calc(100% - 40px);
+        transition: background 0.2s;
+
+        &:disabled {
+            pointer-events: none;
+            cursor: disabled;
+            opacity: 0.6;
+        }
+    }
+
+    .completedArea {
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+        width: 100%;
+
+        h4 {
+            font-size: 0.875rem;
+            color: var(--gray-700);
+        }
+
+        .textCompleted {
+            font-weight: bold;
+            color: var(--green-700);
+            font-size: 1.5rem;
+        }
+
+        .buttonCompletePhase {
+            background: var(--green-700);
+            color: var(--white);
+
+            &:hover {
+                background: var(--green-300);
+            }
+        }
+    }
+
+    .buttonGetDetails {
+        background: var(--gray-300);
+        color: var(--black);
+
+        &:hover {
+            background: var(--gray-500);
+        }
+    }
+}
